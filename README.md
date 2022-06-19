@@ -29,32 +29,27 @@ The datasets that are being used can be found [here](https://drive.google.com/dr
 
 ## Steps
 1. Data Preparation
-2. Model Building 
-3. Model Evaluation
-
-## Model Building
-1. Train the model once on all available data
-2. Recursive Feature Elimination for coarse tuning of significant variables
-3. Manual Feature Elimination using p-values and VIF values
-4. Arrive at a robust model which is free of multicollinearity
+2. Data Cleaning
+3. Exploratory Data Analysis
+4. Random Forest Model for getting important variables
+5. Logistic Regression model for interpretability
+6. Business Recommendations
+7. Decision Tree for interpretation
+8. Principal Component Analysis for dimensionality reduction
+9. Ensemble models for improved accuracy
 
 ## Model Evaluation
 1. After the model was built which predicts the probability of churn, cutoff probability was decided using ROC Curve
 2. Sensitivity - Specificity trade off was kept in mind while evaluating the model on different cutoffs until ideal cutoff was found.
 3. The model was also evaluated on Precision and Recall for comparison purposes
 
-## Conclusions
-- 74% sensitivity - Out of all the customers who were to leave the network, 74% were correctly identified
-- 78% specificity - Out of all the customers who did not plan to leave the network, 78% were correctly identified
-
 ## Concepts Used
+- Exploratory Data Analysis
+- Tree Based Models eg. Decision Trees
 - Logistic Regression
-- Standardization
-- Recursive Feature Elimination
-- Confusion Matrix
-- Sensitivity & Specificity
-- ROC Curve & ROC AUC
-- Precision & Recall
+- Cross Validation
+- Prinipal Component Analysis
+- Ensemble Techniques eg. Random Forest, XGBoost
 
 ## Technologies Used
 - python
@@ -64,6 +59,7 @@ The datasets that are being used can be found [here](https://drive.google.com/dr
 - seaborn
 - statsmodels
 - sklearn
+- xgboost
 
 ## Acknowledgements
 This project was based on case study at IIITB
